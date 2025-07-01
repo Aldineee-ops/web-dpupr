@@ -106,9 +106,8 @@ body {
 }
 
 main {
-  display: flex;
   background-color: white;
-  margin-top: 105px;
+  margin-top: 130px;
 }
 
 .main-img {
