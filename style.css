@@ -1,0 +1,199 @@
+:root {
+  --primary: #ff8a8a;
+  --bg: #000000;
+  --text: #333333;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: green;
+}
+
+/* Navbar Atas */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  background-color: var(--white);
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+  height: 65px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.navbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Atur jarak antar item */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* UBAH DARI flex-start ke center */
+  gap: 0.1rem; /* biar agak renggang */
+  font-size: 14px;
+  color: var(--text);
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.contact-text span {
+  font-weight: 400;
+}
+
+.contact-text strong {
+  font-weight: 500;
+}
+
+.icon-clock {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 1px; /* Geser ikon ke bawah */
+}
+
+/* Navbar Bawah */
+.navbar-bottom {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  height: 60px;
+  z-index: 9998;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-bottom a {
+  color: var(--white);
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-bottom a:hover {
+  background-color: var(--primary);
+  color: var(--bg);
+  border-radius: 5px;
+}
+
+main {
+  display: flex;
+  background-color: white;
+  margin-top: 105px;
+}
+
+.main-img {
+  position: relative;
+  background: url(./Image/Capture.JPG);
+  background-repeat: no-repeat; /* agar tidak mengulang */
+  background-size: 100%;
+  background-position: center; /* letakkan di tengah */
+  width: 100%;
+  height: 90vh;
+  opacity: 0.9;
+}
+
+.main-welcome {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3); /* warna dasar transparan */
+  border-radius: 25px;
+  width: auto;
+  backdrop-filter: blur(5px); /* inilah efek blur-nya! */
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  padding: 1px;
+  color: #ffffff33;
+}
+
+.main-welcome section {
+  color: black;
+  font-size: 25px;
+  z-index: 100;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  padding: 25px 100px;
+  margin-top: 25px;
+}
+
+.footer-left {
+  display: flex;
+}
+
+.contact-info,
+.map {
+  padding: 20px 0px;
+}
+
+.contact-footer {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-bottom: 4px;
+}
+
+.contact-footer a:hover {
+  color: yellow;
+  text-decoration: underline;
+  transition: 1s;
+}
+
+.map {
+  flex: 1;
+  border: 0px solid;
+}
+
+.h1 {
+  padding: 20px;
+}
+
+.judul-maps,
+.map {
+  margin-left: 100px;
+}
+
+.socmed a img {
+  transition: 0.5s;
+  filter: brightness(0) invert(0); /* hitam */
+}
+
+.socmed a:hover img {
+  filter: brightness(0) invert(1); /* jadi putih — atau ganti sesuai efek */
+}
+
+.arr {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
