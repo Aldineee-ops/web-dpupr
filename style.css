@@ -121,17 +121,6 @@ main {
   opacity: 0.9;
 }
 
-.main-welcome {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.3); /* warna dasar transparan */
-  border-radius: 25px;
-  width: auto;
-  backdrop-filter: blur(5px); /* inilah efek blur-nya! */
-  border: 5px solid rgba(0, 0, 0, 0.3);
-  padding: 1px;
-  color: #ffffff33;
-}
-
 .main-welcome section {
   color: black;
   font-size: 25px;
